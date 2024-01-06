@@ -8,16 +8,37 @@ const resetBtn = document.getElementById('resetBtn');
 function createCounter() {
     let count = 0;
 
+
+    // function increment() {
+    //     count++;
+    //     countDisplay.textContent = count;
+    // }
+
     function increment() {
         count++;
+        if (count >= 10) {
+            countDisplay.style.color = 'red'; // Change color to red at count 10
+        }
+        else {
+
+        }
         countDisplay.textContent = count;
     }
 
     function decrement() {
         if (count > 0) {
             count--;
+            if (count < 10) {
+                countDisplay.style.color = 'black'; // Change color to priviouse
+            }
             countDisplay.textContent = count;
-        } else {
+        }
+        // else if (count < 10 && cou) {
+        //     count--;
+        //     countDisplay.textContent = count;
+        //     countDisplay.style.color = 'black'; // Change color to priviouse
+        // }
+        else {
             alert("Count cannot go below 0!");
         }
     }

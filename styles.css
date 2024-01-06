@@ -21,6 +21,10 @@ h1 {
     background-color: #f7f7f7;
 }
 
+#countDisplay {
+    font-size: 100px;
+}
+
 span {
     font-size: 24px;
     font-weight: bold;
@@ -50,6 +54,7 @@ button {
 
 #incrementBtn {
     background-color: #3498db; /* Blue color for characters starting with 'I' */
+    /*background-color: white; /* Blue color for characters starting with 'I' */
 }
 
 #decrementBtn {
