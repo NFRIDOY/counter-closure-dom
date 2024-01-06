@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.counter {
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+span {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Add this additional style to assign colors based on characters */
+button {
+    /* ... (Previous button styles) */
+    color: white;
+}
+
+#incrementBtn {
+    background-color: #3498db; /* Blue color for characters starting with 'I' */
+}
+
+#decrementBtn {
+    background-color: #e74c3c; /* Red color for characters starting with 'D' */
+}
