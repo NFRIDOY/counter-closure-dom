@@ -16,11 +16,11 @@ function createCounter() {
 
     function increment() {
         count++;
-        if (count >= 10) {
+        if (count == 10) {
             countDisplay.style.color = 'red'; // Change color to red at count 10
         }
         else {
-
+            countDisplay.style.color = 'black';
         }
         countDisplay.textContent = count;
     }
@@ -28,8 +28,11 @@ function createCounter() {
     function decrement() {
         if (count > 0) {
             count--;
-            if (count < 10) {
+            if (count < 10 || count > 10) {
                 countDisplay.style.color = 'black'; // Change color to priviouse
+            }
+            else if (count == 10) {
+                countDisplay.style.color = 'red';
             }
             countDisplay.textContent = count;
         }
